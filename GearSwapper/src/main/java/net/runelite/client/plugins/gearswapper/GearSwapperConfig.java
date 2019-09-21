@@ -3,16 +3,15 @@ package net.runelite.client.plugins.gearswapper;
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
-import net.runelite.client.config.ConfigTitleSection;
 import net.runelite.client.config.Keybind;
-import net.runelite.client.config.Title;
+import net.runelite.client.config.Stub;
 import net.runelite.client.plugins.gearswapper.utils.ActionType;
 
 @ConfigGroup("gearswapper")
 
 public interface GearSwapperConfig extends Config
 {
-	@ConfigTitleSection(
+	@ConfigItem(
 		keyName = "desc",
 		name = "<html>If you would like to copy your currently" +
 			"<br> equipped gear, type \"::copy\" in chat." +
@@ -21,27 +20,27 @@ public interface GearSwapperConfig extends Config
 		description = "",
 		position = 0
 	)
-	default Title desc()
+	default Stub desc()
 	{
-		return new Title();
+		return new Stub();
 	}
 
-	@ConfigTitleSection(
+	@ConfigItem(
 		keyName = "swaps",
 		name = "Swaps",
 		description = "",
 		position = 0
 	)
-	default Title swaps()
+	default Stub swaps()
 	{
-		return new Title();
+		return new Stub();
 	}
 
 	@ConfigItem(
 		keyName = "gearSwapMelee",
 		name = "Gear Swap Melee",
 		description = "Enables/Disables Set",
-		titleSection = "swaps",
+		parent = "swaps",
 		position = 1
 	)
 	default boolean gearSwapMelee()
@@ -53,7 +52,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "gearSwapMage",
 		name = "Gear Swap Mage",
 		description = "Enables/Disables Set",
-		titleSection = "swaps",
+		parent = "swaps",
 		position = 2
 	)
 	default boolean gearSwapMage()
@@ -65,7 +64,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "gearSwapRange",
 		name = "Gear Swap Range",
 		description = "Enables/Disables Set",
-		titleSection = "swaps",
+		parent = "swaps",
 		position = 3
 	)
 	default boolean gearSwapRange()
@@ -73,22 +72,22 @@ public interface GearSwapperConfig extends Config
 		return true;
 	}
 
-	@ConfigTitleSection(
+	@ConfigItem(
 		keyName = "hotkeys",
 		name = "Hotkeys",
 		description = "",
 		position = 4
 	)
-	default Title hotkeys()
+	default Stub hotkeys()
 	{
-		return new Title();
+		return new Stub();
 	}
 
 	@ConfigItem(
 		keyName = "spec",
 		name = "Spec after Melee Swap",
 		description = "zzzzzz",
-		titleSection = "hotkeys",
+		parent = "hotkeys",
 		position = 5
 	)
 	default boolean spec()
@@ -100,8 +99,8 @@ public interface GearSwapperConfig extends Config
 		keyName = "hotkeyMelee",
 		name = "Melee Swap hotkey",
 		description = "When you press this key your Melee Set will be equipped",
-		titleSection = "hotkeys",
-		position = 6
+		parent = "hotkeys",
+		position = 5
 	)
 	default Keybind hotkeyMelee()
 	{
@@ -112,8 +111,8 @@ public interface GearSwapperConfig extends Config
 		keyName = "hotkeyMage",
 		name = "Mage Swap hotkey",
 		description = "When you press this key your Mage Set will be equipped",
-		titleSection = "hotkeys",
-		position = 7
+		parent = "hotkeys",
+		position = 6
 	)
 	default Keybind hotkeyMage()
 	{
@@ -124,8 +123,8 @@ public interface GearSwapperConfig extends Config
 		keyName = "hotkeyRange",
 		name = "Range Swap hotkey",
 		description = "When you press this key your Ranged Set will be equipped",
-		titleSection = "hotkeys",
-		position = 8
+		parent = "hotkeys",
+		position = 7
 	)
 	default Keybind hotkeyRange()
 	{
@@ -136,31 +135,31 @@ public interface GearSwapperConfig extends Config
 		keyName = "hotkeyUtil",
 		name = "Utility hotkey",
 		description = "Util",
-		titleSection = "hotkeys",
-		position = 9
+		parent = "hotkeys",
+		position = 8
 	)
 	default Keybind hotkeyUtil()
 	{
 		return Keybind.NOT_SET;
 	}
 
-	@ConfigTitleSection(
+	@ConfigItem(
 		keyName = "config",
 		name = "Config",
 		description = "",
-		position = 10
+		position = 9
 	)
-	default Title config()
+	default Stub config()
 	{
-		return new Title();
+		return new Stub();
 	}
 
 	@ConfigItem(
 		keyName = "randLow",
 		name = "Minimum MS Delay",
 		description = "Dont set this too high.",
-		titleSection = "config",
-		position = 11
+		parent = "config",
+		position = 10
 	)
 	default int randLow()
 	{
@@ -171,8 +170,8 @@ public interface GearSwapperConfig extends Config
 		keyName = "randLower",
 		name = "Maximum MS Delay",
 		description = "Dont set this too high.",
-		titleSection = "config",
-		position = 12
+		parent = "config",
+		position = 11
 	)
 	default int randHigh()
 	{
@@ -182,9 +181,9 @@ public interface GearSwapperConfig extends Config
 	@ConfigItem(
 		keyName = "actionType",
 		name = "Action Type",
-		titleSection = "config",
+		parent = "config",
 		description = "Flexo is smooth mouse<br> MouseEvents is ghost mouse",
-		position = 13
+		position = 12
 	)
 	default ActionType actionType()
 	{
@@ -195,7 +194,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "mageSet",
 		name = "Mage Set",
 		description = "Item Ids, separate with commas.<br> DO NOT LEAVE EMPTY",
-		section = "Mage",
+		group = "Mage",
 		hidden = true,
 		unhide = "gearSwapMage",
 		position = 14
@@ -209,7 +208,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "removeMageSet",
 		name = "Mage Set Un-Equip",
 		description = "Item Ids, separate with commas.<br> DO NOT LEAVE EMPTY",
-		section = "Mage",
+		group = "Mage",
 		hidden = true,
 		unhide = "gearSwapMage",
 		position = 15
@@ -223,7 +222,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "rangeSet",
 		name = "Range Set",
 		description = "Item Ids, separate with commas.<br> DO NOT LEAVE EMPTY",
-		section = "Range",
+		group = "Range",
 		hidden = true,
 		unhide = "gearSwapRange",
 		position = 16
@@ -237,7 +236,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "removeRangeSet",
 		name = "Range Set Un-Equip",
 		description = "Item Id, separate with commas.<br> DO NOT LEAVE EMPTY",
-		section = "Range",
+		group = "Range",
 		hidden = true,
 		unhide = "gearSwapRange",
 		position = 17
@@ -251,7 +250,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "meleeSet",
 		name = "Melee Set",
 		description = "Item Ids, separate with commas.<br> DO NOT LEAVE EMPTY",
-		section = "Melee",
+		group = "Melee",
 		hidden = true,
 		unhide = "gearSwapMelee",
 		position = 18
@@ -265,7 +264,7 @@ public interface GearSwapperConfig extends Config
 		keyName = "removeMeleeSet",
 		name = "Melee Set Un-Equip",
 		description = "Item Ids, separate with commas.<br> DO NOT LEAVE EMPTY",
-		section = "Melee",
+		group = "Melee",
 		hidden = true,
 		unhide = "gearSwapMelee",
 		position = 19
@@ -279,12 +278,11 @@ public interface GearSwapperConfig extends Config
 		keyName = "util",
 		name = "Util",
 		description = "util",
-		section = "Util",
+		group = "Util",
 		position = 17
 	)
 	default String util()
 	{
 		return "0";
 	}
-
 }

@@ -27,13 +27,13 @@ package net.runelite.client.plugins.flexo;
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
-import net.runelite.client.config.ConfigTitleSection;
-import net.runelite.client.config.Title;
+/*import net.runelite.client.config.ConfigTitleSection;
+import net.runelite.client.config.Title;*/
 
 @ConfigGroup("flexo")
 public interface FlexoConfig extends Config
 {
-	@ConfigTitleSection(
+/*	@ConfigTitleSection(
 		keyName = "overlayStub",
 		name = "Overlay",
 		description = "",
@@ -268,5 +268,5 @@ public interface FlexoConfig extends Config
 	default String getNoisinessDivider()
 	{
 		return "2.0D";
-	}
+	}*/
 }

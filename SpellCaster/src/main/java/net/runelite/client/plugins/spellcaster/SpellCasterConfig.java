@@ -30,9 +30,8 @@ import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
-import net.runelite.client.config.ConfigTitleSection;
 import net.runelite.client.config.Keybind;
-import net.runelite.client.config.Title;
+import net.runelite.client.config.Stub;
 import net.runelite.client.plugins.spellcaster.utils.ActionType;
 
 @ConfigGroup("SpellCaster")
@@ -49,15 +48,15 @@ public interface SpellCasterConfig extends Config
 		return true;
 	}
 
-	@ConfigTitleSection(
+	@ConfigItem(
 		position = 0,
 		keyName = "ancientsStub",
 		name = "Ancient Spells",
 		description = ""
 	)
-	default Title ancientsStub()
+	default Stub ancientsStub()
 	{
-		return new Title();
+		return new Stub();
 	}
 
 	@ConfigItem(
@@ -65,7 +64,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "ancientOne",
 		name = "1",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Ancients ancientOne()
 	{
@@ -77,7 +76,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyAncientOne",
 		name = "Spell 1 Hotkey",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Keybind hotkeyAncientOne()
 	{
@@ -89,7 +88,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "ancientTwo",
 		name = "2",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Ancients ancientTwo()
 	{
@@ -101,7 +100,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyAncientTwo",
 		name = "Spell 2 Hotkey",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Keybind hotkeyAncientTwo()
 	{
@@ -113,7 +112,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "ancientThree",
 		name = "3",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Ancients ancientThree()
 	{
@@ -125,7 +124,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyAncientThree",
 		name = "Spell 3 Hotkey",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Keybind hotkeyAncientThree()
 	{
@@ -137,7 +136,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "ancientFour",
 		name = "4",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Ancients ancientFour()
 	{
@@ -149,7 +148,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyAncientFour",
 		name = "Spell 4 Hotkey",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Keybind hotkeyAncientFour()
 	{
@@ -161,7 +160,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "ancientFive",
 		name = "5",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Ancients ancientFive()
 	{
@@ -173,22 +172,22 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyAncientFive",
 		name = "Spell 5 Hotkey",
 		description = "",
-		titleSection = "ancientsStub"
+		parent = "ancientsStub"
 	)
 	default Keybind hotkeyAncientFive()
 	{
 		return Keybind.NOT_SET;
 	}
 
-	@ConfigTitleSection(
+	@ConfigItem(
 		position = 0,
 		keyName = "standardsStub",
 		name = "Standard Spells",
 		description = ""
 	)
-	default Title standardsStub()
+	default Stub standardsStub()
 	{
-		return new Title();
+		return new Stub();
 	}
 
 	@ConfigItem(
@@ -196,7 +195,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "standardOne",
 		name = "1",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Standards standardOne()
 	{
@@ -208,7 +207,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyStandardOne",
 		name = "Spell 1 Hotkey",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Keybind hotkeyStandardOne()
 	{
@@ -220,7 +219,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "standardTwo",
 		name = "2",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Standards standardTwo()
 	{
@@ -232,7 +231,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyStandardTwo",
 		name = "Spell 2 Hotkey",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Keybind hotkeyStandardTwo()
 	{
@@ -244,7 +243,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "standardThree",
 		name = "3",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Standards standardThree()
 	{
@@ -256,7 +255,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyStandardThree",
 		name = "Spell 3 Hotkey",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Keybind hotkeyStandardThree()
 	{
@@ -268,7 +267,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "standardFour",
 		name = "4",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Standards standardFour()
 	{
@@ -280,7 +279,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyStandardFour",
 		name = "Spell 4 Hotkey",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Keybind hotkeyStandardFour()
 	{
@@ -292,7 +291,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "standardFive",
 		name = "5",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Standards standardFive()
 	{
@@ -304,22 +303,22 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyStandardFive",
 		name = "Spell 5 Hotkey",
 		description = "",
-		titleSection = "standardsStub"
+		parent = "standardsStub"
 	)
 	default Keybind hotkeyStandardFive()
 	{
 		return Keybind.NOT_SET;
 	}
 
-	@ConfigTitleSection(
+	@ConfigItem(
 		position = 0,
 		keyName = "lunarsStub",
 		name = "Lunar Spells",
 		description = ""
 	)
-	default Title lunarsStub()
+	default Stub lunarsStub()
 	{
-		return new Title();
+		return new Stub();
 	}
 
 	//lunars
@@ -328,7 +327,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "lunarOne",
 		name = "1",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Lunars lunarOne()
 	{
@@ -340,7 +339,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyLunarOne",
 		name = "Spell 1 Hotkey",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Keybind hotkeyLunarOne()
 	{
@@ -352,7 +351,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "lunarTwo",
 		name = "2",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Lunars lunarTwo()
 	{
@@ -364,7 +363,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyLunarTwo",
 		name = "Spell 2 Hotkey",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Keybind hotkeyLunarTwo()
 	{
@@ -376,7 +375,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "lunarThree",
 		name = "3",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Lunars lunarThree()
 	{
@@ -388,7 +387,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyLunarThree",
 		name = "Spell 3 Hotkey",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Keybind hotkeyLunarThree()
 	{
@@ -400,7 +399,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "lunarFour",
 		name = "4",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Lunars lunarFour()
 	{
@@ -412,7 +411,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyLunarFour",
 		name = "Spell 4 Hotkey",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Keybind hotkeyLunarFour()
 	{
@@ -424,7 +423,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "lunarFive",
 		name = "5",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Lunars lunarFive()
 	{
@@ -436,7 +435,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "hotkeyLunarFive",
 		name = "Spell 5 Hotkey",
 		description = "",
-		titleSection = "lunarsStub"
+		parent = "lunarsStub"
 	)
 	default Keybind hotkeyLunarFive()
 	{
@@ -444,15 +443,15 @@ public interface SpellCasterConfig extends Config
 	}
 
 	//end lunars
-	@ConfigTitleSection(
+	@ConfigItem(
 		position = 22,
 		keyName = "botConfig",
 		name = "Bot Config",
 		description = ""
 	)
-	default Title botConfig()
+	default Stub botConfig()
 	{
-		return new Title();
+		return new Stub();
 	}
 
 	@ConfigItem(
@@ -460,7 +459,7 @@ public interface SpellCasterConfig extends Config
 		keyName = "actionType",
 		name = "Action Type",
 		description = "Flexo is smooth mouse, MouseEvents is ghost mouse.",
-		titleSection = "botConfig"
+		parent = "botConfig"
 	)
 	default ActionType actionType()
 	{
@@ -472,7 +471,7 @@ public interface SpellCasterConfig extends Config
 		name = "Minimum Delay",
 		description = "For MouseEvents",
 		position = 39,
-		titleSection = "botConfig"
+		parent = "botConfig"
 	)
 	default int randLow()
 	{
@@ -484,7 +483,7 @@ public interface SpellCasterConfig extends Config
 		name = "Maximum Delay",
 		description = "For MouseEvents",
 		position = 40,
-		titleSection = "botConfig"
+		parent = "botConfig"
 	)
 	default int randHigh()
 	{

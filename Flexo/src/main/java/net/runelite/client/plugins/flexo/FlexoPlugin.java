@@ -314,7 +314,7 @@ public class FlexoPlugin extends Plugin
 
 	private void updateConfig()
 	{
-		this.overlayEnabled = config.overlayEnabled();
+/*		this.overlayEnabled = config.overlayEnabled();
 		this.debugNPCs = config.getDebugNPCs();
 		this.debugPlayers = config.getDebugPlayers();
 		this.debugGroundItems = config.getDebugGroundItems();
@@ -331,6 +331,6 @@ public class FlexoPlugin extends Plugin
 		this.getStoppingFlow = config.getStoppingFlow();
 		this.getDeviationSlope = config.getDeviationSlope();
 		this.getNoisinessDivider = config.getNoisinessDivider();
-		this.scalingFactor = configManager.getConfig(StretchedModeConfig.class).scalingFactor();
+		this.scalingFactor = configManager.getConfig(StretchedModeConfig.class).scalingFactor();*/
 	}
 }
