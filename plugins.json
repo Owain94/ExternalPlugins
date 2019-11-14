@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Flexo",
+    "id": "flexo-plugin",
+    "description": "Enables flexo",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.2",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/flexo-0.0.1.jar?raw=true",
+        "sha512sum": "70642C6046FB08E255407A3AABE69FC45BA164E70E5F527E4D402AE3C049A802BE900B470D6DE71FB1A5083AAFA7AFB4CA853A4BC5D68B1A907B3274B49F92F1"
+      }
+    ]
+  },
+  {
+    "name": "Gear Swapper",
+    "id": "gearswapper-plugin",
+    "description": "Swaps gear automatically",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.2",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/gearswapper-0.0.1.jar?raw=true",
+        "sha512sum": "49E3407D1F004541D3EA89C1490B171569323D788161999BAB676BAE1755C6F7D4D853C5ECD81436A8CF6804B1DEC42A0E5F97EE9CC229465B19AA2C149A102A"
+      }
+    ]
+  },
+  {
+    "name": "Item dropper",
+    "id": "itemdropper-plugin",
+    "description": "Drops items so you don't have to do it",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/itemdropper-0.0.1.jar?raw=true",
+        "sha512sum": "28BD13916758732469DA2D6E2DA1D5F6D9697D7AEB3223E54D870526FE9B3000D5523175EDE0DA6C9FABD2A5E72EB4465A88A93BFFC6F10A679EC7BFE66BC0F8"
+      }
+    ]
+  },
+  {
+    "name": "Left click cast",
+    "id": "leftclickcast-plugin",
+    "description": "Cast spells using left click",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/leftclickcast-0.0.1.jar?raw=true",
+        "sha512sum": "066A5077FA2FB9D6945A8D5EF200863D81622227B4C1EC421C11029B1679563AA18B943CE57237974566A42C975B8B15F886CDCD8FBF3444C6FA9D27D03A3632"
+      }
+    ]
+  },
+  {
+    "name": "Never log",
+    "id": "neverlog-plugin",
+    "description": "Keeps you logged in",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/neverlog-0.0.1.jar?raw=true",
+        "sha512sum": "8059347A445E6AB367E90CAA4589F83DBE13D407D728032065F95E27C12281FD1E3FD7C65CF893A874DB517E2E5F9E5499017C74B82605C15897AD988A73312E"
+      }
+    ]
+  },
+  {
+    "name": "Nylo swapper",
+    "id": "nyloswapper-plugin",
+    "description": "Swaps prayers at Nylocas",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/nyloswapper-0.0.1.jar?raw=true",
+        "sha512sum": "89C179475DAD9D69661619F3D22E5E725A918BBCFFC34D19040C4E546DFE7335C1C814F0AFB370B1E0735B54654B42FD8883BAFA8807613D5C115DBAA25D7F33"
+      }
+    ]
+  },
+  {
+    "name": "Olm swapper",
+    "id": "olmswapper-plugin",
+    "description": "Swaps prayers at Olm",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/olmswapper-0.0.1.jar?raw=true",
+        "sha512sum": "FCD08DE3C62C1DA18C213AAB7ADAA02A2C28B0C424F3D643F6DC657FDBCC7ADB18B0E302A890D2F74253A434AB0C65F3FA1988C70403D6530B0C0FB45509C451"
+      }
+    ]
+  },
+  {
+    "name": "One click",
+    "id": "oneclick-plugin",
+    "description": "Turns various actions into one click actions",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/oneclick-0.0.1.jar?raw=true",
+        "sha512sum": "9950ED896BD4BD4EBD1A2509775CEC0CC0FB91BB1E7213332F9C35B88296CBD1412B051D481DBE83FF91092FBF664DB499AF30936CAC3B5D83F614F1B823446B"
+      }
+    ]
+  },
+  {
+    "name": "Pray swapper",
+    "id": "prayswap-plugin",
+    "description": "Swaps prayers",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/prayswapper-0.0.1.jar?raw=true",
+        "sha512sum": "CBF43AE0EF9864FF156F5AF8E61DF7DD17717A065821C74428D3AA38327CEBE6647B4179408767EC52409C96C1069414BBA2078D4942B1AC5D8733A93E2484D9"
+      }
+    ]
+  },
+  {
+    "name": "Widget scaler",
+    "id": "widgetscaler-plugin",
+    "description": "Adds the ability to resize widgets",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/scaler-0.0.1.jar?raw=true",
+        "sha512sum": "97E8508BEEBA1F42E80E05A3C322354D258915E36AD8FA48FFCDA1B7927758A4936FD5D3B7AC6C23DB564FB6BC647CC94130BE4DC46A32205BB003EBD9B1CC09"
+      }
+    ]
+  },
+  {
+    "name": "Spell caster",
+    "id": "spellcaster-plugin",
+    "description": "Cast spells with hotkeys",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/spellcaster-0.0.1.jar?raw=true",
+        "sha512sum": "AD4F94B8D945050338CAF3275FE9CE6D4FE31AFD7D088D9CDC028DE11A3D99776CED9687707DF2112CA70CE62736129995E016B675278A8184EBDB5CCC065443"
+      }
+    ]
+  },
+  {
+    "name": "Tick eater",
+    "id": "tickeater-plugin",
+    "description": "Tick eats food",
+    "provider": "Ganom",
+    "projectUrl": "https://discord.gg/nVzG25",
+    "releases": [
+      {
+        "version": "0.0.1",
+        "requires": "0.0.1",
+        "date": "2019-11-14",
+        "url": "https://github.com/Owain94/ExternalPlugins/blob/master/release/tickeater-0.0.1.jar?raw=true",
+        "sha512sum": "23306E744EFD566492DA4172A39CC6BD761D2E8F78E24840B3C0B51DEB6D94E368FA364C1FCCCDDD54F9E4C442BDCA45DE747C505C2629775D77CD88E68D6984"
+      }
+    ]
+  }
+]
